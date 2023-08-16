@@ -58,6 +58,33 @@
         </div>
       </nav>
       <!-- navbar ends here -->
+
+      <!-- dashboard content begins here -->
+      <div class="dashCont">
+        <div id="dashboardContainer">
+            <p id="welcome"></p>
+            <select name="" id="netWork">
+                <option selected disabled value="none">Select Network Provider</option>
+                <option value="mtn">MTN</option>
+                <option value="glo">GLO</option>
+                <option value="airtel">AIRTEL</option>
+                <option value="9mobile">9MOBILE</option>
+            </select><br>
+            <select name="" id="amount">
+                <option selected disabled value="empty">Choose Airtime Amount</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+            </select><br>
+            <h4>Pin Appears here</h4>
+            <input type="text" id="airtimeGenerated" value=""><br>
+            <button id="btn-1" onclick="generateAirtime()">Generate Airtime</button>
+            <h2>Recharge Airtime</h2>
+            <input id="recharge" type="text"><br>
+            <button id="btn-2" onclick="loadAirtime()">Recharge Airtime</button>
+          </div>
+      </div>
     </main>
 
 
